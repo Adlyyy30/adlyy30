@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak NewJeans</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #00bcd4;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0097a7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kontak NewJeans</h1>
+    <p>Hubungi NewJeans melalui informasi berikut:</p>
+
+    <h2>Media Sosial Resmi</h2>
+    <ul>
+        <li><a href="https://www.instagram.com/newjeans_official/" target="_blank">Instagram: @jeanz_official</a></li>
+        <li><a href="https://twitter.com/NewJeans_ADOR" target="_blank">Twitter: @NewJeans_ADOR</a></li>
+        <li><a href="https://www.tiktok.com/@newjeans_official" target="_blank">TikTok: @newjeans_official</a></li>
+        <li><a href="https://www.youtube.com/channel/UCY1W5H_MYNBmpYqF2rtBraQ" target="_blank">YouTube: NewJeans Official</a></li>
+    </ul>
+
+    <h2>Website Resmi</h2>
+    <ul>
+        <li><a href="https://www.newjeans.kr" target="_blank">www.newjeans.kr</a></li>
+    </ul>
+
+    <h2>Email</h2>
+    <ul>
+        <li>fansupport@jeanz.com</li>
+    </ul>
+
+    <h2>Alamat Agensi</h2>
+    <ul>
+        <li>HYBE Corporation (ex)</li>
+        <li>42, Hangang-daero, Yongsan-gu, Seoul, Korea Selatan</li>
+    </ul>
+
+    <h2>Kirim Pesan</h2>
+    <form action="/submit_contact" method="post">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda di sini" required></textarea>
+
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
